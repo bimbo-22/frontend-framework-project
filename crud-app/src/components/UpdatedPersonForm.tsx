@@ -4,11 +4,13 @@ import { Person } from "../types/types";
 interface UpdatePersonFormProps {
   person: Person;
   onSubmit: (updatedPerson: Person) => void;
+  onCancel: () => void;
 }
 
 const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
   person,
   onSubmit,
+  onCancel
 }) => {
   const [username, setUsername] = useState(person.username);
   const [email, setEmail] = useState(person.email);
@@ -30,83 +32,68 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mt-4">
-      <div className="mb-4">
-        <label
-          htmlFor="username"
-          className="block text-gray-700 font-bold mb-2"
-        >
-          Username
-        </label>
-        <input
-          type="text"
-          id="username"
-          className="form-input"
+    <div className="">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-2 border rounded-md p-2 w-full  shadow-md bg-slate-200 border-slate-300">
+      <label htmlFor="username">Username:</label>
+      <input
+        className="p-1 border rounded-md px-2 mb-3"
+        id="username"
+        placeholder="Enter Username"
+        type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-      </div>
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
-          Email
-        </label>
+   
+        <label htmlFor="email">Email:</label>
         <input
-          type="email"
-          id="email"
-          className="form-input"
+        className="p-1 border rounded-md px-2 mb-3"
+        id="email"
+        type="email"
+        placeholder="Enter Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-      </div>
-      <div className="mb-4">
-        <label
-          htmlFor="password"
-          className="block text-gray-700 font-bold mb-2"
-        >
-          Password
-        </label>
-        <input
-          type="password"
-          id="password"
-          className="form-input"
+   
+       <label htmlFor="password">Password:</label>
+          <input
+        className="p-1 border rounded-md px-2 mb-3"
+        id="password"
+        type="password"
+        placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-      </div>
-      <div className="mb-4">
-        <label
-          htmlFor="birthdate"
-          className="block text-gray-700 font-bold mb-2"
-        >
-          Birthdate
-        </label>
-        <input
-          type="date"
+   
+   <div className="flex flex-col gap-4 md:flex-row md:gap-10">
+        <div className="flex flex-col">
+        <label htmlFor="birthdate">Birth date:</label>
+          <input
+          className="p-1 border rounded-md px-2 mb-3 bg-white text-black w-44"
           id="birthdate"
-          className="form-input"
+          type="date" // Adjust input type to handle birthdate
+          placeholder="Birthdate"
           value={birthdate}
           onChange={(e) => setBirthdate(e.target.value)}
         />
+        </div>
+        <div className="flex flex-col">
+           <label htmlFor="registerdate">Registered At:</label>
+            <input
+            className="p-1 border rounded-md px-2 mb-3 bg-white text-black w-44"
+            type="date" // Adjust input type to handle registeredAt
+            placeholder="Registered At"
+           value={registeredAt}
+            onChange={(e) => setRegisteredAt(e.target.value)}
+            />
+        </div>
+      
+     </div>
+      <div className="flex gap-3">
+        <button className="px-4 py-2 w-48 rounded-md bg-orange-400 hover:bg-orange-500 cursor-pointer text-white"  type="submit">Update Person</button>
+        <button onClick={onCancel} className="px-4 py-2 w-48 rounded-md bg-red-600 hover:bg-red-700 cursor-pointer text-white"  type="submit">Cancel edit</button>
       </div>
-      <div className="mb-4">
-        <label
-          htmlFor="registeredAt"
-          className="block text-gray-700 font-bold mb-2"
-        >
-          Registered At
-        </label>
-        <input
-          type="date"
-          id="registeredAt"
-          className="form-input"
-          value={registeredAt}
-          onChange={(e) => setRegisteredAt(e.target.value)}
-        />
-      </div>
-      <button type="submit" className="btn">
-        Update Person
-      </button>
     </form>
+    </div>
   );
 };
 
