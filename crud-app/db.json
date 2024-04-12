@@ -1,0 +1,19 @@
+{
+  "fake": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "address": "123 Main St",
+      "accountNumber": "1234567890"
+    },
+
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 25,
+      "address": "456 Elm St",
+      "accountNumber": "0987654321"
+    }
+  ]
+}
