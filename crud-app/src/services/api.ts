@@ -18,22 +18,23 @@ export const getAllPeople = async () => {
 };
 
 export const addPerson = async (person: PersonData) => {
-  const response = await fetch(`${API_URL}/people`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(person),
+  const response = await axios.post(`${API_URL}/people`, {
+    // method: "POST",
+    // headers: {
+    //   "Content-Type": "application/json",
+    // },
+    // body: JSON.stringify(person),
+    ...person,
   });
-  if (!response.ok) {
-    throw new Error("Failed to add person");
-  }
-  return response.json();
+  // if (!response.ok) {
+  //   throw new Error("Failed to add person");
+  // }
+  return response.data.json(person);
 };
 
 export const deletePerson = async (personId: number): Promise<void> => {
   try {
-    await axios.delete(`${API_URL}/${personId}`);
+    await axios.delete(`${API_URL}/people/${personId}`);
     console.log("Person deleted successfully.");
   } catch (error) {
     console.error(`Error deleting person: ${error}`);

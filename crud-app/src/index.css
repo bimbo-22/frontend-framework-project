@@ -1,7 +1,21 @@
 /* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+body{
+  margin: 0;
+  /* display: flex;
+  /* place-items: center; */
+  /* min-width: 320px;
+  min-height: 100vh; */ 
+  background-color: #EDEDF0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
 /* Custom styles */
-.container {
+/* .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
@@ -67,4 +81,5 @@
 .person-card:hover {
   transform: translateY(-2px);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */
+
