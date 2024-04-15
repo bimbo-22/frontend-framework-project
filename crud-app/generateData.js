@@ -10,17 +10,18 @@ const generatePeople = (num) => {
   for (let i = 0; i < num; i++) {
     const person = {
       userId: faker.string.uuid(),
-      username: faker.internet.userName(),
+      firstName: faker.person.firstName(),
+      lastName: faker.person.lastName(),
       email: faker.internet.email(),
-      avatar: faker.image.avatar(),
-      password: faker.internet.password(),
+      sex: faker.person.sexType(),
       birthdate: faker.date.birthdate(),
-      registeredAt: faker.date.past(),
+      address: faker.location.streetAddress(true),
+      accountNumber: faker.finance.accountNumber(),
     };
     people.fakes.push(person);
   }
   return people;
 };
 
-const data = generatePeople(10); // Generate 10 random people
+const data = generatePeople(5); // Generate 10 random people
 writeFileSync("./src/data/people.json", JSON.stringify(data, null, 2));

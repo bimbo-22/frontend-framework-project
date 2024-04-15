@@ -1,10 +1,15 @@
 import axios from "axios";
 import { Person } from "../types/types";
+
 const API_URL = "http://localhost:8000";
 
 interface PersonData {
-  name: string;
-  age: number;
+  userId: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  sex: string;
+  birthdate: string;
   address: string;
   accountNumber: string;
 }
@@ -18,21 +23,11 @@ export const getAllPeople = async () => {
 };
 
 export const addPerson = async (person: PersonData) => {
-  const response = await axios.post(`${API_URL}/people`, {
-    // method: "POST",
-    // headers: {
-    //   "Content-Type": "application/json",
-    // },
-    // body: JSON.stringify(person),
-    ...person,
-  });
-  // if (!response.ok) {
-  //   throw new Error("Failed to add person");
-  // }
-  return response.data.json(person);
+  const response = await axios.post(`${API_URL}/people`, person);
+  return response.data;
 };
 
-export const deletePerson = async (personId: number): Promise<void> => {
+export const deletePerson = async (personId: string): Promise<void> => {
   try {
     await axios.delete(`${API_URL}/people/${personId}`);
     console.log("Person deleted successfully.");
@@ -46,7 +41,7 @@ export const updatePerson = async (updatedPerson: Person): Promise<Person> => {
   try {
     console.log("Updating person:", updatedPerson);
     const response = await axios.put(
-      `${API_URL}/${updatedPerson.id}`,
+      `${API_URL}/people/${updatedPerson.userId}`,
       updatedPerson
     );
     console.log("Update response:", response.data);

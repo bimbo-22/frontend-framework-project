@@ -1,94 +1,54 @@
 {
   "fakes": [
     {
-      "userId": "1e18b074-76b4-4791-8e5c-d40fa56cee41",
-      "username": "Cheyanne76",
-      "email": "Ward.Bogan6@gmail.com",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/430.jpg",
-      "password": "fYYu_0leETikQit",
-      "birthdate": "1990-05-30T06:39:54.492Z",
-      "registeredAt": "2024-01-29T04:15:38.889Z"
+      "userId": "17fcd0f2-dd8d-4631-8af4-46e5889dc364",
+      "firstName": "Duncan",
+      "lastName": "Erdman",
+      "email": "Omer94@gmail.com",
+      "sex": "male",
+      "birthdate": "1961-03-01T00:54:08.761Z",
+      "address": "3646 Chandler Walks Apt. 929",
+      "accountNumber": "27257814"
     },
     {
-      "userId": "273180c5-6241-44d2-b82f-48767b6a49fb",
-      "username": "Oran24",
-      "email": "Bennie50@gmail.com",
-      "avatar": "https://avatars.githubusercontent.com/u/25271169",
-      "password": "dBu3mwoJD3VIC80",
-      "birthdate": "2000-12-27T06:38:49.149Z",
-      "registeredAt": "2023-09-20T16:07:34.610Z"
+      "userId": "53e60227-c6d5-44f3-9323-439f7516fc65",
+      "firstName": "Frida",
+      "lastName": "Koelpin",
+      "email": "Gino_Conroy-Kuhic@gmail.com",
+      "sex": "male",
+      "birthdate": "1961-08-11T11:41:46.987Z",
+      "address": "863 Rosetta Mountains Apt. 359",
+      "accountNumber": "64606651"
     },
     {
-      "userId": "69ddfa6b-20ee-4d87-9531-4070adaa9bc4",
-      "username": "Carissa38",
-      "email": "Elena82@yahoo.com",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/21.jpg",
-      "password": "p3sobxbGrvuRS2v",
-      "birthdate": "1948-08-16T16:04:22.204Z",
-      "registeredAt": "2023-09-22T08:33:08.884Z"
+      "userId": "c28fe9bf-9bc1-4ac4-868d-988626305ca8",
+      "firstName": "Tyreek",
+      "lastName": "Hermiston",
+      "email": "Kristopher.Adams2@gmail.com",
+      "sex": "female",
+      "birthdate": "1983-09-05T05:15:35.635Z",
+      "address": "47921 Crystel Burg Apt. 201",
+      "accountNumber": "45708847"
     },
     {
-      "userId": "65286909-21d6-44fa-8431-37ba318027b2",
-      "username": "Syble50",
-      "email": "Noelia_Berge@gmail.com",
-      "avatar": "https://avatars.githubusercontent.com/u/4540106",
-      "password": "i2G44FbCcGZNia3",
-      "birthdate": "1966-09-25T19:25:43.590Z",
-      "registeredAt": "2023-07-28T07:06:40.379Z"
+      "userId": "85c3b139-af23-48b8-a0ed-c4f84dfcaaf2",
+      "firstName": "Kenna",
+      "lastName": "Rohan-McLaughlin",
+      "email": "Jovany25@hotmail.com",
+      "sex": "male",
+      "birthdate": "1954-10-26T06:34:32.769Z",
+      "address": "60987 S Park Street Suite 361",
+      "accountNumber": "12235568"
     },
     {
-      "userId": "a63c5f01-dadc-4364-90db-9bd32ca2ccc7",
-      "username": "Margaret34",
-      "email": "Mervin_Bechtelar6@yahoo.com",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/568.jpg",
-      "password": "QxzZhyyTqiyh0ws",
-      "birthdate": "1967-08-09T05:45:57.083Z",
-      "registeredAt": "2023-07-17T00:08:47.305Z"
-    },
-    {
-      "userId": "810c33df-4a66-460d-a0dc-91b0fee7a146",
-      "username": "Haley.Mann",
-      "email": "Ernie_Lehner@gmail.com",
-      "avatar": "https://avatars.githubusercontent.com/u/5869326",
-      "password": "1AhxxlRBwT4wnk7",
-      "birthdate": "1963-09-26T10:18:12.587Z",
-      "registeredAt": "2023-09-06T17:42:56.598Z"
-    },
-    {
-      "userId": "e8d11fe8-1a8b-4f50-93b2-d8b8e7899ca1",
-      "username": "Susana.Schroeder",
-      "email": "Marielle84@gmail.com",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/709.jpg",
-      "password": "9CjQLiNuUWVBgFF",
-      "birthdate": "1955-02-23T20:10:06.535Z",
-      "registeredAt": "2023-10-13T17:00:36.912Z"
-    },
-    {
-      "userId": "2bcb53c0-d98a-4a38-ad8e-f198613282e0",
-      "username": "Kaleb.Jenkins",
-      "email": "Crystal51@hotmail.com",
-      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/86.jpg",
-      "password": "a6fcs659Pl4O8G6",
-      "birthdate": "1987-12-31T22:45:25.928Z",
-      "registeredAt": "2023-11-21T13:55:16.534Z"
-    },
-    {
-      "userId": "d93b4a18-5963-4fc2-8c16-4f7b90e78555",
-      "username": "Hudson12",
-      "email": "Alexzander.Wilkinson94@gmail.com",
-      "avatar": "https://avatars.githubusercontent.com/u/80814749",
-      "password": "hDdT99I52E0CDRn",
-      "birthdate": "2004-09-10T11:34:07.736Z",
-      "registeredAt": "2023-11-12T07:17:03.714Z"
-    },
-    {
-      "userId": "2653fc46-c4c5-4e01-92b3-d7afea72c5aa",
-      "username": "Stefan.Lehner",
-      "email": "Elliot_Jacobi15@hotmail.com",
-      "avatar": "https://avatars.githubusercontent.com/u/60609134",
-      "password": "LsJY1Xp5FWWqUn6",
-      "birthdate": "1986-07-27T08:19:04.601Z",
-      "registeredAt": "2023-07-04T12:05:44.673Z"
+      "userId": "70265801-5876-43d6-aeaf-30391f770183",
+      "firstName": "Vladimir",
+      "lastName": "Kozey",
+      "email": "Tressie.Hickle@gmail.com",
+      "sex": "female",
+      "birthdate": "1983-06-22T12:16:41.102Z",
+      "address": "7887 Buck Pines Apt. 937",
+      "accountNumber": "16264366"
     }
   ]
 }

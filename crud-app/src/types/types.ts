@@ -1,9 +1,10 @@
 export interface Person {
-  id: number;
-  username: string;
+  userId: string;
+  firstName: string;
+  lastName: string;
   email: string;
-  avatar: string;
-  password: string;
+  sex: string;
   birthdate: string;
-  registeredAt: string;
+  address: string;
+  accountNumber: string;
 }
