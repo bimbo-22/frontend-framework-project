@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 interface AddPersonFormProps {
   onSubmit: (personData: {
-    userId: string;
+    id: string;
     firstName: string;
     lastName: string;
     email: string;
@@ -24,7 +24,7 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await onSubmit({
-      userId: "",
+      id: "",
       firstName,
       lastName,
       email,
@@ -56,7 +56,7 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
           type="text"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
-        />
+        required/>
 
         <label htmlFor="lastName">Last Name:</label>
         <input
@@ -66,7 +66,7 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
           type="text"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="email">Email:</label>
         <input
@@ -76,7 +76,7 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
           placeholder="Enter Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="sex">Sex:</label>
         <input
@@ -86,17 +86,17 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
           placeholder="Enter Sex"
           value={sex}
           onChange={(e) => setSex(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="birthdate">Birth Date:</label>
         <input
           className="p-1 border rounded-md px-2 mb-3"
           id="birthdate"
-          type="text"
+          type="date"
           placeholder="Enter Birth Date"
           value={birthdate}
           onChange={(e) => setBirthdate(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="address">Address:</label>
         <input
@@ -106,7 +106,7 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
           placeholder="Enter Address"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="accountNumber">Account Number:</label>
         <input
@@ -116,7 +116,7 @@ const AddPersonForm: React.FC<AddPersonFormProps> = ({ onSubmit }) => {
           placeholder="Enter Account Number"
           value={accountNumber}
           onChange={(e) => setAccountNumber(e.target.value)}
-        />
+          required/>
 
         <button
           className="px-4 py-2 w-36 rounded-md bg-green-600 hover:bg-green-400 cursor-pointer text-white"

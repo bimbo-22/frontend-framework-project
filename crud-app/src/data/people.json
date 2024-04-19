@@ -1,54 +1,34 @@
 {
   "fakes": [
     {
-      "userId": "17fcd0f2-dd8d-4631-8af4-46e5889dc364",
-      "firstName": "Duncan",
-      "lastName": "Erdman",
-      "email": "Omer94@gmail.com",
-      "sex": "male",
-      "birthdate": "1961-03-01T00:54:08.761Z",
-      "address": "3646 Chandler Walks Apt. 929",
-      "accountNumber": "27257814"
-    },
-    {
-      "userId": "53e60227-c6d5-44f3-9323-439f7516fc65",
-      "firstName": "Frida",
-      "lastName": "Koelpin",
-      "email": "Gino_Conroy-Kuhic@gmail.com",
-      "sex": "male",
-      "birthdate": "1961-08-11T11:41:46.987Z",
-      "address": "863 Rosetta Mountains Apt. 359",
-      "accountNumber": "64606651"
-    },
-    {
-      "userId": "c28fe9bf-9bc1-4ac4-868d-988626305ca8",
-      "firstName": "Tyreek",
-      "lastName": "Hermiston",
-      "email": "Kristopher.Adams2@gmail.com",
+      "id": "yqLI",
+      "firstName": "Annamae",
+      "lastName": "Mayert",
+      "email": "Donald_Predovic48@gmail.com",
       "sex": "female",
-      "birthdate": "1983-09-05T05:15:35.635Z",
-      "address": "47921 Crystel Burg Apt. 201",
-      "accountNumber": "45708847"
+      "birthdate": "1962-11-18T03:10:48.092Z",
+      "address": "187 Nader Trafficway Apt. 257",
+      "accountNumber": "37988624"
     },
     {
-      "userId": "85c3b139-af23-48b8-a0ed-c4f84dfcaaf2",
-      "firstName": "Kenna",
-      "lastName": "Rohan-McLaughlin",
-      "email": "Jovany25@hotmail.com",
+      "id": "CK4l",
+      "firstName": "dsaK",
+      "lastName": "Ddee",
+      "email": "johnee.de@example.com",
+      "sex": "maeedle",
+      "birthdate": "1990-01-01",
+      "address": "123 Main Street",
+      "accountNumber": "1234567890"
+    },
+    {
+      "id": "Hafz",
+      "firstName": "Mack",
+      "lastName": "Huels",
+      "email": "Imogene.Grant@gmail.com",
       "sex": "male",
-      "birthdate": "1954-10-26T06:34:32.769Z",
-      "address": "60987 S Park Street Suite 361",
-      "accountNumber": "12235568"
-    },
-    {
-      "userId": "70265801-5876-43d6-aeaf-30391f770183",
-      "firstName": "Vladimir",
-      "lastName": "Kozey",
-      "email": "Tressie.Hickle@gmail.com",
-      "sex": "female",
-      "birthdate": "1983-06-22T12:16:41.102Z",
-      "address": "7887 Buck Pines Apt. 937",
-      "accountNumber": "16264366"
+      "birthdate": "1985-08-26T07:23:33.082Z",
+      "address": "3037 Alexandria Path Suite 849",
+      "accountNumber": "53975075"
     }
   ]
 }

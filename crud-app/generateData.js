@@ -9,7 +9,7 @@ const generatePeople = (num) => {
   };
   for (let i = 0; i < num; i++) {
     const person = {
-      userId: faker.string.uuid(),
+      id: faker.string.alphanumeric(4),
       firstName: faker.person.firstName(),
       lastName: faker.person.lastName(),
       email: faker.internet.email(),

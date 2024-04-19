@@ -16,9 +16,12 @@
     "axios": "^1.6.8",
     "faker": "^5.5.3",
     "json-server": "^1.0.0-alpha.23",
+    "nanoid": "^5.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "uuid": "^9.0.1",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
