@@ -49,7 +49,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           type="text"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="lastName">Last Name:</label>
         <input
@@ -59,7 +59,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           type="text"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="email">Email:</label>
         <input
@@ -69,7 +69,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           placeholder="Enter Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="birthdate">Birth date:</label>
         <input
@@ -79,7 +79,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           placeholder="Birthdate"
           value={birthdate}
           onChange={(e) => setBirthdate(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="address">Address:</label>
         <input
@@ -89,7 +89,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           placeholder="Enter Address"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="accountNumber">Account Number:</label>
         <input
@@ -99,7 +99,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           placeholder="Enter Account Number"
           value={accountNumber}
           onChange={(e) => setAccountNumber(e.target.value)}
-        />
+          required/>
 
         <label htmlFor="sex">Sex:</label>
         <input
@@ -109,7 +109,7 @@ const UpdatePersonForm: React.FC<UpdatePersonFormProps> = ({
           placeholder="Enter Sex"
           value={sex}
           onChange={(e) => setSex(e.target.value)}
-        />
+          required/>
 
         <div className="flex gap-3">
           <button

@@ -2,6 +2,7 @@ import React from "react";
 
 interface PersonProps {
   person: {
+    id: string;
     firstName: string;
     lastName: string;
     email: string;
@@ -23,7 +24,7 @@ const Person: React.FC<PersonProps> = ({
     <>
       <div className="flex flex-col gap-3 border p-4 mb-4 bg-gray-200 shadow-md rounded-md">
         <p>
-          <strong>Last Name:</strong> {person.lastName}
+          <strong>Full Name:</strong> {person.lastName} {person.firstName}
         </p>
         <p>
           <strong>Email:</strong> {person.email}

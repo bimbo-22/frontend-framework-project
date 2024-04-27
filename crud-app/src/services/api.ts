@@ -1,10 +1,11 @@
 import axios from "axios";
 import { Person } from "../types/types";
+import {nanoid} from "nanoid"
 
 const API_URL = "http://localhost:8000";
 
 interface PersonData {
-  userId: string;
+  id: string;
   firstName: string;
   lastName: string;
   email: string;
@@ -15,37 +16,38 @@ interface PersonData {
 }
 
 export const getAllPeople = async () => {
-  const response = await fetch(`${API_URL}/people`);
+  const response = await fetch(`${API_URL}/fakes`);
   if (!response.ok) {
     throw new Error("Failed to fetch data");
   }
-  return response.json();
+  return response.json(); 
 };
 
 export const addPerson = async (person: PersonData) => {
-  const response = await axios.post(`${API_URL}/people`, person);
+  const id = nanoid(4)
+  const addWithGeneratedId = {...person, id}
+  const response = await axios.post(`${API_URL}/fakes`, addWithGeneratedId);
   return response.data;
 };
 
-export const deletePerson = async (personId: string): Promise<void> => {
+export const deletePerson = async (userId: string): Promise<void> => {
   try {
-    await axios.delete(`${API_URL}/people/${personId}`);
+    await axios.delete(`${API_URL}/fakes/${userId}`);
     console.log("Person deleted successfully.");
   } catch (error) {
     console.error(`Error deleting person: ${error}`);
-    throw new Error(`Error deleting person: ${error}`);
   }
 };
 
 export const updatePerson = async (updatedPerson: Person): Promise<Person> => {
   try {
     console.log("Updating person:", updatedPerson);
-    const response = await axios.put(
-      `${API_URL}/people/${updatedPerson.userId}`,
+    const response = await axios.patch(
+      `${API_URL}/people/${updatedPerson.id}`,
       updatedPerson
     );
     console.log("Update response:", response.data);
-    return response.data as Person;
+    return response.data
   } catch (error) {
     console.error(`Error updating person: ${error}`);
     throw new Error(`Error updating person: ${error}`);

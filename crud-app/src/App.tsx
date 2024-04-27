@@ -19,11 +19,12 @@ const App: React.FC = () => {
       try {
         const data = await getAllPeople();
         setPeople(data); // Adjusted to set the entire data array
+        console.log(people)
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-
+    
     fetchData();
   }, []);
 
@@ -44,7 +45,7 @@ const App: React.FC = () => {
       console.log("Person updated successfully:", updated);
       setPeople(
         people.map((person) =>
-          person.userId === updated.userId ? updated : person
+          person.id === updated.id ? updated : person
         )
       );
       setSelectedPerson(null);
@@ -53,10 +54,10 @@ const App: React.FC = () => {
     }
   };
 
-  const handleDeletePerson = async (personId: string) => {
+  const handleDeletePerson = async (id: string) => {
     try {
-      await deletePerson(personId);
-      setPeople(people.filter((person) => person.userId !== personId));
+      await deletePerson(id);
+      setPeople(people.filter((person) => person.id !== id));
     } catch (error) {
       console.error("Error deleting person:", error);
     }
