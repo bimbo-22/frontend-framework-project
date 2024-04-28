@@ -6,7 +6,7 @@ interface PersonListProps {
   onEditClick: (person: PersonType) => void;
   onDeleteClick: (email: string) => void;
 }
-const API_URL = "http://localhost:8000"
+const API_URL = "http://localhost:8000/fakes"
 
 const PersonList: React.FC<PersonListProps> = ({
   onEditClick,
@@ -14,19 +14,24 @@ const PersonList: React.FC<PersonListProps> = ({
 }) => {
   const [people, setPeople] = useState<PersonType[]>([]);
 
+  const fetchData = async () => {
+    try {
+      const response = await fetch(`${API_URL}`);
+      const data = await response.json();
+      setPeople(data); // Assuming the data structure matches the array of Person objects directly
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`${API_URL}/fakes`);
-        const data = await response.json();
-        setPeople(data); // Assuming the data structure matches the array of Person objects directly
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [onDeleteClick, onEditClick]);
 
   return (
     <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
